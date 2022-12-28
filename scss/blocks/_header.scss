@@ -1,0 +1,119 @@
+.header {
+  padding-top: 25px;
+  padding-bottom: 26px;
+  &__logo {
+  }
+
+  &__burger {
+    display: none;
+    z-index: 10;
+    @include desktop-small {
+      display: block;
+      position: fixed;
+      top: 35px;
+      right: 20px;
+    }
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  .material-icons {
+    display: none;
+    @include desktop-small {
+      display: block;
+      position: fixed;
+      top: 35px;
+      right: 20px;
+    }
+  }
+
+  &__ul {
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    @include desktop-small {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    @include desktop-small {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__a {
+    @include text($font-primary, 700, 16px, 20px, $color-dark);
+    transition: $transition;
+    &:hover {
+      color: $violet;
+    }
+  }
+  @include desktop-small {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transform: translateX(-150%);
+    transition: $transition;
+    .header-nav__row {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    .header-nav__a {
+      @include text($font-primary, 700, 30px, 38px, $color-body);
+      &:hover {
+        color: $violet;
+      }
+    }
+    .material-icons {
+      color: $color-body;
+    }
+    .btn-primary {
+      padding: 20px 30px;
+      @include text($font-primary, 700, 30px, 20px, $color-body);
+      transition: $transition;
+      &:hover {
+        color: $color-dark;
+      }
+    }
+  }
+  &._active {
+    transform: translateX(0);
+  }
+}
+
+.btn {
+  border: 0;
+  outline: none;
+  @include text($font-primary, 700, 16px, 20px, $color-body);
+  background: none;
+}
+.btn-primary {
+  padding: 15px 30px;
+}

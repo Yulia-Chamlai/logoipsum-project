@@ -1,0 +1,82 @@
+.instructor {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    @media (max-width: 1350px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__info {
+    max-width: 537px;
+    margin-top: 208px;
+    margin-bottom: 222px;
+    @media (max-width: 1350px) {
+      margin: 20px;
+    }
+  }
+  &__name {
+    @include text($font-secondary, 700, 46px, 56px, $color-dark);
+    margin-bottom: 20px;
+    @media (max-width: 1350px) {
+      @include text($font-secondary, 700, 30px, 45px, $color-dark);
+    }
+  }
+  &__desc {
+    @include text($font-primary, 400, 20px, 30px, $color-desc);
+  }
+  &__photo-wrapper {
+    position: relative;
+  }
+  &__photo {
+    padding-right: 26px;
+    margin-top: 160px;
+    position: relative;
+    @media (max-width: 1350px) {
+      padding-right: 0;
+    }
+    img {
+      border-radius: 50%;
+    }
+    border-radius: 50%;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 354px;
+      height: 354px;
+      background: $primary-grad;
+      border-radius: 50%;
+      z-index: -1;
+      top: -20.5px;
+    }
+  }
+  &__circle-top {
+    width: 88px;
+    height: 88px;
+    position: absolute;
+    background: $secondary-grad;
+    border-radius: 50%;
+    top: 130px;
+    right: 310px;
+    @media (max-width: 1350px) {
+      display: none;
+    }
+  }
+  &__circle-bottom {
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    background: $light-grad;
+    border-radius: 50%;
+    opacity: 30%;
+    bottom: 150px;
+    right: 0;
+    @media (max-width: 1350px) {
+      display: none;
+    }
+  }
+}

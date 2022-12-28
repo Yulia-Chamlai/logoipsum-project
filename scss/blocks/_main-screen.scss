@@ -1,0 +1,94 @@
+.main-screen {
+  position: relative;
+  display: flex;
+  padding: 134px 0 94px 0;
+  align-items: center;
+  @include desktop-small {
+    align-items: flex-end;
+    gap: 50px;
+  }
+  &::before {
+    content: "";
+    width: 74%;
+    height: 100%;
+    background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
+    opacity: 5%;
+    mix-blend-mode: Normal;
+    display: block;
+    border-radius: 0 20px 20px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    @include desktop-small {
+      width: 100%;
+    }
+  }
+  @include desktop-small {
+    flex-direction: column;
+  }
+
+  &__container {
+    z-index: 2;
+  }
+
+  &__info {
+    max-width: 560px;
+    @include desktop-small {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    @include text($font-secondary, 700, 60px, 68px, $color-dark);
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    max-width: 537px;
+    @include desktop-small {
+      max-width: 100%;
+    }
+  }
+  &__description {
+    @include text($font-primary, 400, 20px, 30px, $color-desc);
+    margin-bottom: 40px;
+  }
+  &__video {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 3;
+    @include desktop-small {
+      position: static;
+    }
+  }
+}
+.btn-primary {
+  padding: 20px 49px;
+}
+.students {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+    border: 4px solid $light;
+    border-radius: 50%;
+    &:not(:first-child) {
+      margin-left: -20px;
+    }
+  }
+
+  &__text {
+    @include text($font-primary, 400, 16px, 20px, $color-desc);
+    span {
+      color: $violet;
+    }
+  }
+}

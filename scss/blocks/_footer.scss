@@ -1,0 +1,116 @@
+.footer {
+  margin-top: 120px;
+  padding: 63px 0 80px 0;
+  background: #cd10ff0f;
+  &-container {
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: center;
+    @include desktop-small {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__logo {
+    max-width: 150px;
+    cursor: pointer;
+  }
+
+  &__input-wrapper {
+    width: 890px;
+    background: $color-body;
+    padding: 8px 0;
+    border-radius: 33px;
+    display: flex;
+    justify-content: space-between;
+    @include desktop-small {
+      width: 100%;
+      margin: 0 20px;
+    }
+  }
+  input {
+    @include text($font-primary, 400, 16px, 18.75px, $color-desc);
+    border: 0;
+    border-radius: 33px;
+    outline: none;
+    padding-left: 40px;
+    width: 346px;
+    &::placeholder {
+      @include text($font-primary, 400, 16px, 18.75px, $color-p-holder);
+    }
+  }
+
+  &__btn {
+    padding: 15px 30px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  &__list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 150px 0 240px;
+    @include desktop-small {
+      grid-template-columns: 1fr;
+      padding: 50px;
+      justify-items: center;
+    }
+  }
+
+  &__item {
+    &.first {
+      max-width: 350px;
+      @include desktop-small {
+        text-align: center;
+      }
+    }
+    &.second {
+      max-width: 190px;
+      margin-left: 100px;
+      @include desktop-small {
+        text-align: center;
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__item-title {
+    @include text($font-primary, 700, 16px, 20px, $color-dark);
+    margin-bottom: 20px;
+    @include desktop-small {
+      font-size: 28px;
+    }
+  }
+
+  &__item-links {
+    display: flex;
+    flex-direction: row;
+    gap: 123px;
+    @include desktop-small {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  &__item-ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-a {
+    @include text($font-primary, 400, 16px, 20px, $color-desc);
+    margin-bottom: 20px;
+    transition: $transition;
+    &:hover {
+      color: $violet;
+    }
+    @include desktop-small {
+      font-size: 22px;
+    }
+  }
+}

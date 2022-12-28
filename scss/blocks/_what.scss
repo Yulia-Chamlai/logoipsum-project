@@ -1,0 +1,119 @@
+.what {
+  margin-top: 150px;
+  &__container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__title {
+    @include text($font-secondary, 700, 46px, 56px, $color-dark);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    @include text($font-primary, 400, 20px, 30px, $color-desc);
+    text-align: center;
+    max-width: 560px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 61px;
+  }
+
+  /*&__circle {
+    position: absolute;
+    width: 382px;
+    height: 382px;
+    border-radius: 50%;
+    background: $orange-grad;
+    right: -248px;
+    top: -140px;
+    z-index: 3;
+  }*/
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 54px 40px 46px;
+  gap: 157px;
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  @include tablet-small {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  &::before {
+    content: "";
+    background: $primary-grad;
+    opacity: 0.05;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 21px;
+  }
+  &__info-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  &__icon {
+    width: 29px;
+    height: 23px;
+    position: relative;
+    ::before {
+      content: "";
+      background: yellow;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      position: absolute;
+    }
+  }
+
+  &__text-title {
+    @include text($font-secondary, 700, 24px, 24px, $color-dark);
+    margin-bottom: 20px;
+  }
+
+  &__text-desc {
+    @include text($font-primary, 400, 16px, 24px, $color-desc);
+    max-width: 500px;
+  }
+
+  &__records {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    @include tablet-small {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 13px 0;
+  }
+  &__records-videos {
+    padding: 10px 38px;
+    border-right: 1px solid $button-border;
+    @include text($font-primary, 600, 16px, 20px, $color-body);
+  }
+
+  &__records-hours {
+    padding: 10px 34px;
+    @include text($font-primary, 600, 16px, 20px, $color-body);
+  }
+  &__info {
+    display: flex;
+    @include tablet-small {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}

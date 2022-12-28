@@ -1,0 +1,24 @@
+@import "vars";
+@import "reset";
+@import "mixins";
+@import "base";
+@import "./blocks/header";
+@import "./blocks/main-screen";
+@import "./blocks/counter";
+@import "./blocks/what";
+@import "./blocks/instructor";
+@import "./blocks/offer";
+@import "./blocks/footer";
+@import "./blocks/faq";
+
+.container {
+}
+.btn {
+  background: $primary-grad;
+  @include text($font-primary, 700, 16px, 20px, $color-body);
+  border-radius: 33px;
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  cursor: pointer;
+}

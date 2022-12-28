@@ -1,0 +1,46 @@
+.offer {
+  margin-top: 120px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  .container {
+    overflow: hidden;
+    position: relative;
+  }
+  &__subtitle {
+    @include text($font-secondary, 700, 12px, 15px, $violet);
+
+    background: rgba(255, 215, 169, 0.2);
+    border-radius: 33px;
+    width: 402px;
+    padding: 8px 0;
+    letter-spacing: 2.57px;
+    text-transform: uppercase;
+    margin: auto;
+  }
+
+  &__title {
+    @include text($font-secondary, 700, 46px, 56px, $color-dark);
+
+    max-width: 650px;
+    margin: 50px auto 30px;
+  }
+  button {
+    @include text($font-primary, 700, 20px, 23px, $color-body);
+  }
+  &__circle-big {
+    position: absolute;
+    width: 355px;
+    height: 355px;
+    border-radius: 50%;
+    background: $primary-grad;
+    right: -230px;
+  }
+  &__circle-small {
+    position: absolute;
+    width: 123px;
+    height: 123px;
+    border-radius: 50%;
+    background: $secondary-grad;
+  }
+}
