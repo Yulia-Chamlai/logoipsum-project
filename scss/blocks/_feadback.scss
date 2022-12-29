@@ -1,0 +1,68 @@
+.feadback {
+  background: $primary-grad;
+  padding-bottom: 120px;
+
+  &__title {
+    @include text($font-secondary, 700, 46px, 56px, $color-body);
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    @include text($font-primary, 400, 20px, 30px, $color-body);
+    max-width: 560px;
+    display: block;
+    margin-inline: auto;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+.slider {
+  @include tablet {
+    width: 100%;
+  }
+  &__item {
+    background: $s-item-bg;
+    max-width: 550px;
+    border-radius: 20px;
+    padding: 50px 40px 40px 50px;
+    transition: $transition;
+    @include tablet {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__header {
+    @include text($font-primary, 400, 20px, 30px, $color-body);
+    max-width: 460px;
+  }
+
+  &__footer {
+    display: flex;
+    gap: 14px;
+    margin-top: 30px;
+  }
+
+  &__footer-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  &__footer-name {
+    @include text($font-primary, 700, 16px, 20px, $color-body);
+    margin-bottom: 4px;
+  }
+
+  &__footer-spec {
+    @include text($font-primary, 400, 16px, 20px, $color-body);
+  }
+}
+#html .owl-theme {
+  .owl-dots {
+    display: none;
+  }
+}

@@ -116,4 +116,8 @@
 }
 .btn-primary {
   padding: 15px 30px;
+  transition: $transition;
+  &:hover {
+    color: $color-dark;
+  }
 }

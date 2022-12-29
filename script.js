@@ -6,3 +6,10 @@ function navToggle() {
   var body = document.getElementById("body");
   body.classList.toggle("_overflow");
 }
+
+$(".owl-carousel").owlCarousel({
+  items: 2,
+  lazyLoad: true,
+  loop: true,
+  margin: 10,
+});

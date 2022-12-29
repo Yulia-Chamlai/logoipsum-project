@@ -43,16 +43,6 @@
     }
     border-radius: 50%;
     z-index: 1;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 354px;
-      height: 354px;
-      background: $primary-grad;
-      border-radius: 50%;
-      z-index: -1;
-      top: -20.5px;
-    }
   }
   &__circle-top {
     width: 88px;
@@ -60,8 +50,8 @@
     position: absolute;
     background: $secondary-grad;
     border-radius: 50%;
-    top: 130px;
-    right: 310px;
+    top: 120px;
+    right: 288px;
     @media (max-width: 1350px) {
       display: none;
     }
@@ -73,7 +63,7 @@
     background: $light-grad;
     border-radius: 50%;
     opacity: 30%;
-    bottom: 150px;
+    bottom: 115px;
     right: 0;
     @media (max-width: 1350px) {
       display: none;

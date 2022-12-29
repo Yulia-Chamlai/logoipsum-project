@@ -45,6 +45,7 @@
   }
   &__circle {
     border-radius: 50%;
+
     &-big {
       width: 288px;
       height: 288px;
@@ -54,6 +55,9 @@
       left: -206px;
       top: 20px;
       z-index: -1;
+      @include desktop-small {
+        display: none;
+      }
     }
     &-small {
       width: 86px;
@@ -63,6 +67,9 @@
       position: absolute;
       left: 8px;
       bottom: -136px;
+      @include desktop-small {
+        display: none;
+      }
     }
   }
 }

@@ -10,9 +10,8 @@
 @import "./blocks/offer";
 @import "./blocks/footer";
 @import "./blocks/faq";
+@import "./blocks/feadback";
 
-.container {
-}
 .btn {
   background: $primary-grad;
   @include text($font-primary, 700, 16px, 20px, $color-body);
@@ -21,4 +20,5 @@
   outline: 0;
   display: inline-block;
   cursor: pointer;
+  transition: $transition;
 }

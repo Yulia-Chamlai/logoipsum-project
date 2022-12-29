@@ -2,8 +2,7 @@
   margin-top: 120px;
   padding: 63px 0 80px 0;
   background: #cd10ff0f;
-  &-container {
-  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -28,8 +27,12 @@
     display: flex;
     justify-content: space-between;
     @include desktop-small {
-      width: 100%;
-      margin: 0 20px;
+      flex-direction: column;
+      max-width: 500px;
+      margin-inline: auto;
+    }
+    @include mobile {
+      max-width: 350px;
     }
   }
   input {
@@ -41,6 +44,20 @@
     width: 346px;
     &::placeholder {
       @include text($font-primary, 400, 16px, 18.75px, $color-p-holder);
+      @include mobile {
+        font-size: 14px;
+        margin: auto;
+        max-width: 300px;
+      }
+    }
+    @include desktop-small {
+      font-size: 12px;
+      padding-left: 4px;
+      margin: auto;
+    }
+    @include mobile {
+      max-width: 300px;
+      margin-inline: auto;
     }
   }
 
@@ -48,6 +65,10 @@
     padding: 15px 30px;
     margin-right: 8px;
     cursor: pointer;
+    @include desktop-small {
+      padding: 15px 20px;
+      margin-left: 8px;
+    }
   }
 
   &__list {
@@ -97,12 +118,12 @@
     }
   }
 
-  &__item-ul {
+  &__ul {
     display: flex;
     flex-direction: column;
   }
 
-  &__item-a {
+  &__a {
     @include text($font-primary, 400, 16px, 20px, $color-desc);
     margin-bottom: 20px;
     transition: $transition;
@@ -110,7 +131,7 @@
       color: $violet;
     }
     @include desktop-small {
-      font-size: 22px;
+      font-size: 18px;
     }
   }
 }
