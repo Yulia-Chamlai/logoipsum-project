@@ -2,7 +2,6 @@
   margin-top: 150px;
   &__container {
     position: relative;
-    overflow: hidden;
   }
 
   &__title {
@@ -23,24 +22,25 @@
     margin-bottom: 61px;
   }
 
-  /*&__circle {
+  &__circle {
     position: absolute;
     width: 382px;
     height: 382px;
     border-radius: 50%;
-    background: $orange-grad;
-    right: -248px;
-    top: -140px;
+    background: $secondary-grad;
+    right: -400px;
+    top: -150px;
     z-index: 3;
-  }*/
+    @include desktop-small {
+      display: none;
+    }
+  }
 }
 
 .item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 40px 54px 40px 46px;
-  gap: 157px;
-  position: relative;
+  padding: 39px 54px 40px 41px;
   background: rgba(205, 16, 255, 0.05);
   border-radius: 21px;
   &:not(:last-child) {
@@ -50,25 +50,23 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
-  &__info-wrapper {
+  &__info {
     display: flex;
     gap: 20px;
+  }
+  &__img {
+    background: $color-body;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-shrink: 0;
   }
   &__icon {
     width: 29px;
     height: 23px;
-    position: relative;
-    &::before {
-      content: "";
-      color: white;
-      display: block;
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      position: absolute;
-    }
   }
 
   &__text-title {

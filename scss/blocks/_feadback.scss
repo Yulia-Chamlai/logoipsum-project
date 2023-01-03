@@ -1,7 +1,9 @@
 .feadback {
   background: $primary-grad;
   padding-bottom: 120px;
-
+  &-wrapper {
+    overflow-x: hidden;
+  }
   &__title {
     @include text($font-secondary, 700, 46px, 56px, $color-body);
     text-align: center;

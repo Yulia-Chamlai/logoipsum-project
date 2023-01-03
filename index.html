@@ -27,115 +27,119 @@
     <link rel="stylesheet" href="./plugins/owl.theme.default.css" />
   </head>
   <body id="body">
-    <header class="header">
-      <div class="container header-wrapper">
-        <div class="header__logo">
-          <a href="#">
-            <img src="./icons/logo.svg" alt="logo" />
-          </a>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header-wrapper">
+          <div class="header__logo">
+            <a href="#">
+              <img src="./icons/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="header__burger">
+            <span
+              id="icon-menu"
+              onclick="navToggle()"
+              class="material-icons _active"
+            >
+              menu
+            </span>
+          </div>
+          <nav id="nav" class="header-nav">
+            <ul class="header-nav__ul">
+              <div class="header-nav__row">
+                <li class="header-nav__li">
+                  <a href="#" class="header-nav__a _active">Course topics</a>
+                </li>
+                <li class="header-nav__li">
+                  <a href="#" class="header-nav__a _active"
+                    >What students say</a
+                  >
+                </li>
+              </div>
+              <div class="header-nav__row">
+                <li class="header-nav__li">
+                  <a href="#" class="header-nav__a _active">Sign in</a>
+                </li>
+                <li class="header-nav__li">
+                  <a href="#" class="header-nav__a btn btn-primary _active"
+                    >Get started</a
+                  >
+                </li>
+              </div>
+            </ul>
+            <span id="icon-close" onclick="navToggle()" class="material-icons">
+              close
+            </span>
+          </nav>
         </div>
-        <div class="header__burger">
-          <span
-            id="icon-menu"
-            onclick="navToggle()"
-            class="material-icons _active"
-          >
-            menu
-          </span>
-        </div>
-        <nav id="nav" class="header-nav">
-          <ul class="header-nav__ul">
-            <div class="header-nav__row">
-              <li class="header-nav__li">
-                <a href="#" class="header-nav__a _active">Course topics</a>
-              </li>
-              <li class="header-nav__li">
-                <a href="#" class="header-nav__a _active">What students say</a>
-              </li>
-            </div>
-            <div class="header-nav__row">
-              <li class="header-nav__li">
-                <a href="#" class="header-nav__a _active">Sign in</a>
-              </li>
-              <li class="header-nav__li">
-                <a href="#" class="header-nav__a btn btn-primary _active"
-                  >Get started</a
-                >
-              </li>
-            </div>
-          </ul>
-          <span id="icon-close" onclick="navToggle()" class="material-icons">
-            close
-          </span>
-        </nav>
-      </div>
-    </header>
-    <section class="main-screen">
-      <div class="container main-screen__container">
-        <div class="main-screen__info">
-          <h1 class="main-screen__title">Learn no-code tools today.</h1>
-          <p class="main-screen__description desc">
-            Create beautiful webflow sites with flowbase. Clone for free and get
-            started building a site today.
-          </p>
-          <a href="#" class="btn btn-primary">Get started</a>
-          <div class="students">
-            <div class="students__list">
-              <div class="students__img">
-                <img src="./img/main-screen/student-first.png" alt="User1" />
+      </header>
+      <section class="main-screen">
+        <div class="container main-screen__container">
+          <div class="main-screen__info">
+            <h1 class="main-screen__title">Learn no-code tools today.</h1>
+            <p class="main-screen__description desc">
+              Create beautiful webflow sites with flowbase. Clone for free and
+              get started building a site today.
+            </p>
+            <a href="#" class="btn btn-primary">Get started</a>
+            <div class="students">
+              <div class="students__list">
+                <div class="students__img">
+                  <img src="./img/main-screen/student-first.png" alt="User1" />
+                </div>
+                <div class="students__img">
+                  <img src="./img/main-screen/student-second.png" alt="User2" />
+                </div>
+                <div class="students__img">
+                  <img src="./img/main-screen/student-third.png" alt="User3" />
+                </div>
               </div>
-              <div class="students__img">
-                <img src="./img/main-screen/student-second.png" alt="User2" />
+              <div class="students__text">
+                Join over <span>4,000+</span> students
               </div>
-              <div class="students__img">
-                <img src="./img/main-screen/student-third.png" alt="User3" />
-              </div>
-            </div>
-            <div class="students__text">
-              Join over <span>4,000+</span> students
             </div>
           </div>
         </div>
-      </div>
-      <div class="main-screen__video">
-        <img src="./img/main-screen/video-img.png" alt="video" />
-      </div>
-    </section>
-    <section class="counter container">
-      <div class="counter-wrapper">
-        <div class="counter__item">
-          <div class="counter__amount">12,201</div>
-          <div class="counter__title">happy students</div>
+        <div class="main-screen__video">
+          <img src="./img/main-screen/video-img.png" alt="video" />
         </div>
-        <div class="counter__item">
-          <div class="counter__amount">3,291</div>
-          <div class="counter__title">lectures</div>
+      </section>
+      <section class="counter container">
+        <div class="counter-wrapper">
+          <div class="counter__item">
+            <div class="counter__amount">12,201</div>
+            <div class="counter__title">happy students</div>
+          </div>
+          <div class="counter__item">
+            <div class="counter__amount">3,291</div>
+            <div class="counter__title">lectures</div>
+          </div>
+          <div class="counter__item">
+            <div class="counter__amount">1,291</div>
+            <div class="counter__title">5 star reviews</div>
+          </div>
         </div>
-        <div class="counter__item">
-          <div class="counter__amount">1,291</div>
-          <div class="counter__title">5 star reviews</div>
-        </div>
-      </div>
 
-      <div class="counter__circle-big"></div>
-      <div class="counter__circle-small"></div>
-    </section>
-    <section class="what">
-      <div class="container what__container">
-        <div class="what__title">What you’ll learn</div>
-        <p class="what__desc">
-          Create beautiful webflow sites with flowbase. Clone for free and get
-          started building a site today.
-        </p>
-        <div class="what__list">
-          <div class="what__item item">
-            <div class="item__info">
-              <div class="item__info-wrapper">
-                <img
-                  class="item__icon"
-                  src="./icons/what-icon.svg"
-                  alt="icon"
-                />
+        <div class="counter__circle-big"></div>
+        <div class="counter__circle-small"></div>
+      </section>
+      <section class="what">
+        <div class="container what__container">
+          <div class="what__title">What you’ll learn</div>
+          <p class="what__desc">
+            Create beautiful webflow sites with flowbase. Clone for free and get
+            started building a site today.
+          </p>
+          <div class="what__list">
+            <div class="what__item item">
+              <div class="item__info">
+                <div class="item__img">
+                  <img
+                    class="item__icon"
+                    src="./icons/what-icon.svg"
+                    alt="icon"
+                  />
+                </div>
                 <div class="item__text">
                   <div class="item__text-title">Analyzing User Data</div>
                   <div class="item__text-desc">
@@ -144,22 +148,23 @@
                   </div>
                 </div>
               </div>
+
+              <div class="item__records">
+                <button class="btn btn-primary">
+                  <p class="item__records-videos">6 videos</p>
+                  <p class="item__records-hours">4.5 hours</p>
+                </button>
+              </div>
             </div>
-            <div class="item__records">
-              <button class="btn btn-primary">
-                <p class="item__records-videos">6 videos</p>
-                <p class="item__records-hours">4.5 hours</p>
-              </button>
-            </div>
-          </div>
-          <div class="what__item item">
-            <div class="item__info">
-              <div class="item__info-wrapper">
-                <img
-                  class="item__icon"
-                  src="./icons/what-icon.svg"
-                  alt="icon"
-                />
+            <div class="what__item item">
+              <div class="item__info">
+                <div class="item__img">
+                  <img
+                    class="item__icon"
+                    src="./icons/what-icon.svg"
+                    alt="icon"
+                  />
+                </div>
                 <div class="item__text">
                   <div class="item__text-title">User Persona</div>
                   <div class="item__text-desc">
@@ -168,22 +173,22 @@
                   </div>
                 </div>
               </div>
+              <div class="item__records">
+                <button class="btn btn-primary">
+                  <p class="item__records-videos">6 videos</p>
+                  <p class="item__records-hours">4.5 hours</p>
+                </button>
+              </div>
             </div>
-            <div class="item__records">
-              <button class="btn btn-primary">
-                <p class="item__records-videos">6 videos</p>
-                <p class="item__records-hours">4.5 hours</p>
-              </button>
-            </div>
-          </div>
-          <div class="what__item item">
-            <div class="item__info">
-              <div class="item__info-wrapper">
-                <img
-                  class="item__icon"
-                  src="./icons/what-icon.svg"
-                  alt="icon"
-                />
+            <div class="what__item item">
+              <div class="item__info">
+                <div class="item__img">
+                  <img
+                    class="item__icon"
+                    src="./icons/what-icon.svg"
+                    alt="icon"
+                  />
+                </div>
                 <div class="item__text">
                   <div class="item__text-title">Prototyping</div>
                   <div class="item__text-desc">
@@ -192,22 +197,22 @@
                   </div>
                 </div>
               </div>
+              <div class="item__records">
+                <button class="btn btn-primary">
+                  <p class="item__records-videos">6 videos</p>
+                  <p class="item__records-hours">4.5 hours</p>
+                </button>
+              </div>
             </div>
-            <div class="item__records">
-              <button class="btn btn-primary">
-                <p class="item__records-videos">6 videos</p>
-                <p class="item__records-hours">4.5 hours</p>
-              </button>
-            </div>
-          </div>
-          <div class="what__item item">
-            <div class="item__info">
-              <div class="item__info-wrapper">
-                <img
-                  class="item__icon"
-                  src="./icons/what-icon.svg"
-                  alt="icon"
-                />
+            <div class="what__item item">
+              <div class="item__info">
+                <div class="item__img">
+                  <img
+                    class="item__icon"
+                    src="./icons/what-icon.svg"
+                    alt="icon"
+                  />
+                </div>
                 <div class="item__text">
                   <div class="item__text-title">Storyboarding</div>
                   <div class="item__text-desc">
@@ -216,274 +221,271 @@
                   </div>
                 </div>
               </div>
+              <div class="item__records">
+                <button class="btn btn-primary">
+                  <p class="item__records-videos">6 videos</p>
+                  <p class="item__records-hours">4.5 hours</p>
+                </button>
+              </div>
             </div>
-            <div class="item__records">
-              <button class="btn btn-primary">
-                <p class="item__records-videos">6 videos</p>
-                <p class="item__records-hours">4.5 hours</p>
-              </button>
+          </div>
+          <div class="what__circle"></div>
+        </div>
+      </section>
+      <section class="instructor">
+        <div class="container">
+          <div class="instructor-wrapper">
+            <div class="instructor__info">
+              <h2 class="instructor__name">
+                Hi, I am David, your course instructor.
+              </h2>
+              <p class="instructor__desc">
+                Create beautiful webflow sites with flowbase. Clone for free and
+                get started building a site today.
+              </p>
+            </div>
+            <div class="instructor__photo-wrapper">
+              <div class="instructor__photo">
+                <img src="./img/instructor-img.png" alt="David" />
+              </div>
+            </div>
+            <div class="instructor__circle-top"></div>
+            <div class="instructor__circle-bottom"></div>
+          </div>
+        </div>
+      </section>
+      <section class="feadback feadback-wrapper">
+        <div class="container">
+          <div class="feadback__title">What my students say</div>
+          <div class="feadback__desc">
+            Create custom landing pages with Shades that convert more visitors
+            than any website—no coding required.
+          </div>
+
+          <div class="slider">
+            <div class="owl-carousel owl-theme">
+              <div class="slider__item">
+                <div class="slider__header">
+                  “I waited to completely finish the course to rate it. This was
+                  my first approach to python, i am an excel and VBA user. The
+                  professor has an excellent way to explain it and a lot or
+                  order and organization. I really recommend it.”
+                </div>
+                <div class="slider__footer">
+                  <div class="slider__footer-img">
+                    <img src="./img/feedback/feedback-img1.png" alt="photo1" />
+                  </div>
+                  <div class="slider__footer-text">
+                    <p class="slider__footer-name">Henk Fortuin</p>
+                    <p class="slider__footer-spec">Founder of Crips</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider__item">
+                <div class="slider__header">
+                  “I waited to completely finish the course to rate it. This was
+                  my first approach to python, i am an excel and VBA user. The
+                  professor has an excellent way to explain it and a lot or
+                  order and organization. I really recommend it.”
+                </div>
+                <div class="slider__footer">
+                  <div class="slider__footer-img">
+                    <img src="./img/feedback/feedback-img2.png" alt="photo2" />
+                  </div>
+                  <div class="slider__footer-text">
+                    <p class="slider__footer-name">Opi Watihana</p>
+                    <p class="slider__footer-spec">Founder of Crips</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__header">
+                  “I waited to completely finish the course to rate it. This was
+                  my first approach to python, i am an excel and VBA user. The
+                  professor has an excellent way to explain it and a lot or
+                  order and organization. I really recommend it.”
+                </div>
+                <div class="slider__footer">
+                  <div class="slider__footer-img">
+                    <img src="./img/feedback/feedback-img3.png" alt="photo3" />
+                  </div>
+                  <div class="slider__footer-text">
+                    <p class="slider__footer-name">Annie Reyes</p>
+                    <p class="slider__footer-spec">Founder of Crips</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="what__circle"></div>
-      </div>
-    </section>
-    <section class="instructor">
-      <div class="container">
-        <div class="instructor-wrapper">
-          <div class="instructor__info">
-            <h2 class="instructor__name">
-              Hi, I am David, your course instructor.
-            </h2>
-            <p class="instructor__desc">
-              Create beautiful webflow sites with flowbase. Clone for free and
-              get started building a site today.
-            </p>
-          </div>
-          <div class="instructor__photo-wrapper">
-            <div class="instructor__photo">
-              <img src="./img/instructor-img.png" alt="David" />
-            </div>
-          </div>
-          <div class="instructor__circle-top"></div>
-          <div class="instructor__circle-bottom"></div>
-        </div>
-      </div>
-    </section>
-    <section class="feadback">
-      <div class="container">
-        <div class="feadback__title">What my students say</div>
-        <div class="feadback__desc">
-          Create custom landing pages with Shades that convert more visitors
-          than any website—no coding required.
-        </div>
 
-        <div class="slider">
-          <div class="owl-carousel owl-theme">
-            <div class="slider__item">
-              <div class="slider__header">
-                “I waited to completely finish the course to rate it. This was
-                my first approach to python, i am an excel and VBA user. The
-                professor has an excellent way to explain it and a lot or order
-                and organization. I really recommend it.”
-              </div>
-              <div class="slider__footer">
-                <div class="slider__footer-img">
-                  <img src="./img/feedback/feedback-img1.png" alt="photo1" />
+        <!---->
+
+        <!---->
+      </section>
+      <section class="faq">
+        <div class="container faq-wrapper">
+          <div class="faq__title">Frequently asked questions</div>
+          <div class="faq__list">
+            <div class="faq__items items">
+              <input class="faq-input" type="checkbox" id="faq-1" />
+              <label class="items__header" for="faq-1">
+                <div class="items__title">
+                  Will I get full access to the course after purchasing?
                 </div>
-                <div class="slider__footer-text">
-                  <p class="slider__footer-name">Henk Fortuin</p>
-                  <p class="slider__footer-spec">Founder of Crips</p>
+                <div class="items__arrow">
+                  <img class="arrow" src="./icons/arrow.svg" alt="arrow" />
                 </div>
+              </label>
+
+              <div class="items__body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
               </div>
             </div>
-
-            <div class="slider__item">
-              <div class="slider__header">
-                “I waited to completely finish the course to rate it. This was
-                my first approach to python, i am an excel and VBA user. The
-                professor has an excellent way to explain it and a lot or order
-                and organization. I really recommend it.”
-              </div>
-              <div class="slider__footer">
-                <div class="slider__footer-img">
-                  <img src="./img/feedback/feedback-img2.png" alt="photo2" />
+            <div class="faq__items items">
+              <input class="faq-input" type="checkbox" id="faq-2" />
+              <label class="items__header" for="faq-2">
+                <div class="items__title">
+                  Do you give money back guarantee?
                 </div>
-                <div class="slider__footer-text">
-                  <p class="slider__footer-name">Opi Watihana</p>
-                  <p class="slider__footer-spec">Founder of Crips</p>
+                <div class="items__arrow">
+                  <img class="arrow" src="./icons/arrow.svg" alt="arrow" />
                 </div>
+              </label>
+
+              <div class="items__body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
               </div>
             </div>
-            <div class="slider__item">
-              <div class="slider__header">
-                “I waited to completely finish the course to rate it. This was
-                my first approach to python, i am an excel and VBA user. The
-                professor has an excellent way to explain it and a lot or order
-                and organization. I really recommend it.”
-              </div>
-              <div class="slider__footer">
-                <div class="slider__footer-img">
-                  <img src="./img/feedback/feedback-img3.png" alt="photo3" />
+            <div class="faq__items items">
+              <input class="faq-input" type="checkbox" id="faq-3" />
+              <label class="items__header" for="faq-3">
+                <div class="items__title">Do you offer a discount?</div>
+                <div class="items__arrow">
+                  <img class="arrow" src="./icons/arrow.svg" alt="arrow" />
                 </div>
-                <div class="slider__footer-text">
-                  <p class="slider__footer-name">Annie Reyes</p>
-                  <p class="slider__footer-spec">Founder of Crips</p>
+              </label>
+
+              <div class="items__body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+            <div class="faq__items items">
+              <input class="faq-input" type="checkbox" id="faq-4" />
+              <label class="items__header" for="faq-4">
+                <div class="items__title">
+                  Do you offer support after joining?
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                <div class="items__arrow">
+                  <img class="arrow" src="./icons/arrow.svg" alt="arrow" />
+                </div>
+              </label>
 
-      <!---->
-
-      <!---->
-    </section>
-    <section class="faq">
-      <div class="container faq-wrapper">
-        <div class="faq__title">Frequently asked questions</div>
-        <div class="faq__list">
-          <div class="faq__items items">
-            <input class="faq-input" type="checkbox" id="faq-1" />
-            <label class="items__header" for="faq-1">
-              <div class="items__title">
-                Will I get full access to the course after purchasing?
+              <div class="items__body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
               </div>
-              <div class="items__arrow">
-                <img class="arrow" src="./icons/arrow.svg" alt="arrow" />
-              </div>
-            </label>
-
-            <div class="items__body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-              on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-              lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
-            </div>
-          </div>
-          <div class="faq__items items">
-            <input class="faq-input" type="checkbox" id="faq-2" />
-            <label class="items__header" for="faq-2">
-              <div class="items__title">Do you give money back guarantee?</div>
-              <div class="items__arrow">
-                <img src="./icons/arrow.svg" alt="arrow" />
-              </div>
-            </label>
-
-            <div class="items__body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-              on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-              lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
-            </div>
-          </div>
-          <div class="faq__items items">
-            <input class="faq-input" type="checkbox" id="faq-3" />
-            <label class="items__header" for="faq-3">
-              <div class="items__title">Do you offer a discount?</div>
-              <div class="items__arrow">
-                <img src="./icons/arrow.svg" alt="arrow" />
-              </div>
-            </label>
-
-            <div class="items__body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-              on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-              lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
-            </div>
-          </div>
-          <div class="faq__items items">
-            <input class="faq-input" type="checkbox" id="faq-4" />
-            <label class="items__header" for="faq-4">
-              <div class="items__title">
-                Do you offer support after joining?
-              </div>
-              <div class="items__arrow">
-                <img src="./icons/arrow.svg" alt="arrow" />
-              </div>
-            </label>
-
-            <div class="items__body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-              on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-              lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="offer">
-      <div class="container">
-        <div class="offer__container-wrapper">
-          <div class="offer__subtitle">Get 30 Days Money Back Guarantee</div>
-          <div class="offer__title">
-            Ready to learn UX Design from the expert?
+      </section>
+      <section class="offer">
+        <div class="container">
+          <div class="offer__container-wrapper">
+            <div class="offer__subtitle">Get 30 Days Money Back Guarantee</div>
+            <div class="offer__title">
+              Ready to learn UX Design from the expert?
+            </div>
+            <button class="btn btn-primary">Get started</button>
           </div>
-          <button class="btn btn-primary">Get started</button>
         </div>
-        <!--<div class="offer__circle">
-          <img src="./icons/sircle.svg" alt="" />
-        </div>-->
-      </div>
-      <!--
 
         <div class="offer__circle-big"></div>
         <div class="offer__circle-small"></div>
-      -->
-    </section>
-    <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer__header">
-          <div class="footer__logo">
-            <img src="./icons/logo.svg" alt="logo" />
-          </div>
-          <div class="footer__input-wrapper">
-            <input
-              type="email"
-              placeholder="Stay in the loop  - sign up with your email"
-            />
-            <button class="btn footer__btn btn-primary">Subscribe</button>
-          </div>
-        </div>
-        <div class="footer__list">
-          <div class="footer__item first">
-            <div class="footer__item-title">Help Menu</div>
-            <div class="footer__item-links">
-              <ul class="footer__ul">
-                <a href="#" class="footer__a">About</a>
-                <a href="#" class="footer__a">Features</a>
-                <a href="#" class="footer__a">Works</a>
-                <a href="#" class="footer__a">Career</a>
-              </ul>
-              <ul class="footer__ul">
-                <a href="#" class="footer__a">Contact</a>
-                <a href="#" class="footer__a">Help & Support</a>
-                <a href="#" class="footer__a">Privacy & Policy</a>
-                <a href="#" class="footer__a">Terms & Conditions</a>
-              </ul>
+      </section>
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer__header">
+            <div class="footer__logo">
+              <img src="./icons/logo.svg" alt="logo" />
+            </div>
+            <div class="footer__input-wrapper">
+              <input
+                type="email"
+                placeholder="Stay in the loop  - sign up with your email"
+              />
+              <button class="btn footer__btn btn-primary">Subscribe</button>
             </div>
           </div>
-          <div class="footer__item second">
-            <div class="footer__item-title">Product</div>
-            <div class="footer__item-links">
-              <ul class="footer__ul">
-                <a href="#" class="footer__a">Essential Landing Page</a>
-                <a href="#" class="footer__a">Alpha Dashboard Pro</a>
-                <a href="#" class="footer__a">Karnel Admin Dashboard</a>
-                <a href="#" class="footer__a">Gray UI KitGray UI Kit</a>
-              </ul>
+          <div class="footer__list">
+            <div class="footer__item first">
+              <div class="footer__item-title">Help Menu</div>
+              <div class="footer__item-links">
+                <ul class="footer__ul">
+                  <a href="#" class="footer__a">About</a>
+                  <a href="#" class="footer__a">Features</a>
+                  <a href="#" class="footer__a">Works</a>
+                  <a href="#" class="footer__a">Career</a>
+                </ul>
+                <ul class="footer__ul">
+                  <a href="#" class="footer__a">Contact</a>
+                  <a href="#" class="footer__a">Help & Support</a>
+                  <a href="#" class="footer__a">Privacy & Policy</a>
+                  <a href="#" class="footer__a">Terms & Conditions</a>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__item second">
+              <div class="footer__item-title">Product</div>
+              <div class="footer__item-links">
+                <ul class="footer__ul">
+                  <a href="#" class="footer__a">Essential Landing Page</a>
+                  <a href="#" class="footer__a">Alpha Dashboard Pro</a>
+                  <a href="#" class="footer__a">Karnel Admin Dashboard</a>
+                  <a href="#" class="footer__a">Gray UI KitGray UI Kit</a>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

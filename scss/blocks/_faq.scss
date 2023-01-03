@@ -40,14 +40,15 @@
     display: flex;
     cursor: pointer;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__title {
     @include text($font-secondary, 700, 20px, 24px, $color-dark);
-    margin-bottom: 20px;
   }
 
   &__arrow {
+    transition: $transition;
     img {
       margin-left: 20px;
     }
@@ -58,6 +59,7 @@
     max-width: 667px;
     @include text($font-primary, 400, 16px, 26px, $color-desc);
     transition: $transition;
+    padding: 10px;
   }
 }
 .faq-input {
@@ -68,7 +70,7 @@
     display: block;
     background-color: rgba(205, 16, 255, 0.05);
   }
-  &:checked ~ .items__arrow {
+  &:checked ~ .items__header .arrow {
     transform: rotate(180deg);
   }
 }

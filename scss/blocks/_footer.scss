@@ -20,19 +20,27 @@
   }
 
   &__input-wrapper {
-    width: 890px;
+    max-width: 890px;
+    width: 100%;
     background: $color-body;
-    padding: 8px 0;
+    padding: 23px 8px 23px 40px;
     border-radius: 33px;
     display: flex;
-    justify-content: space-between;
-    @include desktop-small {
-      flex-direction: column;
-      max-width: 500px;
-      margin-inline: auto;
-    }
+    position: relative;
     @include mobile {
-      max-width: 350px;
+      background: $color-body;
+      padding: 23px 8px 23px 40px;
+      border-radius: 33px;
+      display: flex;
+      flex-direction: column;
+      position: static;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 0;
+      padding-bottom: 10px;
+      width: 100%;
     }
   }
   input {
@@ -40,34 +48,28 @@
     border: 0;
     border-radius: 33px;
     outline: none;
-    padding-left: 40px;
     width: 346px;
+    @include mobile {
+      padding: 10px 5px;
+      padding-top: 25px;
+      font-size: 12px;
+      word-break: break-word;
+      max-width: 310px;
+    }
     &::placeholder {
       @include text($font-primary, 400, 16px, 18.75px, $color-p-holder);
-      @include mobile {
-        font-size: 14px;
-        margin: auto;
-        max-width: 300px;
-      }
-    }
-    @include desktop-small {
-      font-size: 12px;
-      padding-left: 4px;
-      margin: auto;
-    }
-    @include mobile {
-      max-width: 300px;
-      margin-inline: auto;
     }
   }
 
   &__btn {
     padding: 15px 30px;
-    margin-right: 8px;
     cursor: pointer;
-    @include desktop-small {
-      padding: 15px 20px;
-      margin-left: 8px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include mobile {
+      position: static;
     }
   }
 

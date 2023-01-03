@@ -41,13 +41,16 @@
   button {
     @include text($font-primary, 700, 20px, 23px, $color-body);
   }
-  /*&__circle-big {
+  &__circle-big {
     position: absolute;
     width: 355px;
     height: 355px;
     border-radius: 50%;
     background: $primary-grad;
     right: -230px;
+    @include desktop-small {
+      display: none;
+    }
   }
   &__circle-small {
     position: absolute;
@@ -55,5 +58,10 @@
     height: 123px;
     border-radius: 50%;
     background: $secondary-grad;
-  }*/
+    right: 30px;
+    top: -20px;
+    @include desktop-small {
+      display: none;
+    }
+  }
 }
