@@ -40,6 +40,7 @@
   }*/
   button {
     @include text($font-primary, 700, 20px, 23px, $color-body);
+    margin-bottom: 10px;
   }
   &__circle-big {
     position: absolute;

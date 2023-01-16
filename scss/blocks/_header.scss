@@ -12,6 +12,12 @@
       right: 20px;
     }
   }
+  &__logo {
+    transition: $transition;
+    &:hover {
+      filter: drop-shadow(2px 4px 6px $color-dark);
+    }
+  }
 }
 
 .header-wrapper {

@@ -21,6 +21,24 @@
   display: inline-block;
   cursor: pointer;
   transition: $transition;
+  &:hover {
+    outline: 6px solid rgb(161, 4, 134);
+    animation: glowing 1300ms infinite;
+    @keyframes glowing {
+      0% {
+        outline: rgb(161, 4, 134);
+        box-shadow: 0 0 3px rgb(161, 4, 134);
+      }
+      50% {
+        outline: rgb(38, 26, 116);
+        box-shadow: 0 0 15px rgb(38, 26, 116);
+      }
+      100% {
+        outline: rgb(186, 108, 25);
+        box-shadow: 0 0 3px rgb(186, 108, 25);
+      }
+    }
+  }
 }
 .wrapper {
   overflow: hidden;

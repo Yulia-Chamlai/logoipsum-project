@@ -17,6 +17,10 @@
   &__logo {
     max-width: 150px;
     cursor: pointer;
+    transition: $transition;
+    &:hover {
+      filter: drop-shadow(2px 4px 6px $color-dark);
+    }
   }
 
   &__input-wrapper {
