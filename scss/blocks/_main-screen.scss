@@ -6,6 +6,7 @@
   @include desktop-small {
     align-items: flex-end;
     gap: 50px;
+    padding: 50px 0 50px 0;
   }
   &::before {
     content: "";
@@ -46,6 +47,8 @@
     max-width: 537px;
     @include desktop-small {
       max-width: 100%;
+      font-size: 40px;
+      line-height: 50px;
     }
   }
   &__description {

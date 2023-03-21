@@ -2,7 +2,10 @@
   margin-top: 120px;
   padding: 63px 0 80px 0;
   background: #cd10ff0f;
-
+  @include desktop-small {
+    margin-top: 20px;
+    padding: 30px 0;
+  }
   &__header {
     display: flex;
     justify-content: space-between;
@@ -49,16 +52,18 @@
   }
   input {
     @include text($font-primary, 400, 16px, 18.75px, $color-desc);
+    text-align: center;
     border: 0;
     border-radius: 33px;
     outline: none;
-    width: 346px;
+    max-width: 346px;
+    width: 100%;
     @include mobile {
       padding: 10px 5px;
       padding-top: 25px;
       font-size: 12px;
       word-break: break-word;
-      max-width: 310px;
+      max-width: 80%;
     }
     &::placeholder {
       @include text($font-primary, 400, 16px, 18.75px, $color-p-holder);
@@ -84,7 +89,7 @@
     padding: 0 150px 0 240px;
     @include desktop-small {
       grid-template-columns: 1fr;
-      padding: 50px;
+      padding: 20px;
       justify-items: center;
     }
   }

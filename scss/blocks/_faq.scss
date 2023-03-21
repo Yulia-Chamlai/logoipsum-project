@@ -4,8 +4,12 @@
     @include text($font-secondary, 700, 46px, 56px, $color-dark);
     text-align: center;
     margin-bottom: 60px;
+    @include desktop-small {
+      margin-top: 50px;
+    }
     @include tablet {
-      font-size: 36px;
+      font-size: 32px;
+      line-height: 52px;
     }
   }
 
@@ -35,6 +39,9 @@
 }
 .items {
   margin-bottom: 20px;
+  @include tablet-small {
+    padding: 20px;
+  }
 
   &__header {
     display: flex;
@@ -45,18 +52,24 @@
 
   &__title {
     @include text($font-secondary, 700, 20px, 24px, $color-dark);
+    @include tablet-small {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__arrow {
+    padding-left: 15px;
+    flex-shrink: 0;
     transition: $transition;
     img {
-      margin-left: 20px;
     }
   }
 
   &__body {
     display: none;
     max-width: 667px;
+    margin-top: 10px;
     @include text($font-primary, 400, 16px, 26px, $color-desc);
     transition: $transition;
     padding: 10px;

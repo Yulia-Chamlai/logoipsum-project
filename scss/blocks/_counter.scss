@@ -2,7 +2,10 @@
   position: relative;
   margin-top: 100px;
   margin-bottom: 150px;
-
+  @include desktop-small {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   &-wrapper {
     background-color: $color-body;
     border-radius: 21px;
@@ -24,6 +27,7 @@
   &__item {
     padding: 20px 125px;
     align-items: center;
+    margin: 0 auto;
     &:not(:last-child) {
       border-right: 1px solid $color-border;
     }
@@ -31,8 +35,13 @@
       &:not(:last-child) {
         border-bottom: 1px solid $color-border;
         width: calc(100% - 60px);
-        margin: 0 auto;
         border-right: 0;
+        padding: 20px 70px;
+      }
+      &:last-child {
+        width: calc(100% - 60px);
+        border-right: 0;
+        padding: 20px 70px;
       }
     }
   }

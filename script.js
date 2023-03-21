@@ -23,8 +23,8 @@ function carouselFn() {
     });
   } else {
     $(".owl-carousel").owlCarousel({
-      items: 2.5,
-      margin: 20,
+      items: 2,
+      margin: 10,
       loop: true,
     });
   }
