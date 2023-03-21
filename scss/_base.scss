@@ -9,7 +9,9 @@ body {
   background-color: $color-body;
   color: $color-desc;
 }
-
+body ._overflow {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
 }

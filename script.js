@@ -7,13 +7,6 @@ function navToggle() {
   body.classList.toggle("_overflow");
 }
 
-/*$(".owl-carousel").owlCarousel({
-  items: 2.5,
-  lazyLoad: true,
-  loop: true,
-  margin: 10,
-});*/
-
 function carouselFn() {
   if ($(window).width() < 500) {
     $(".owl-carousel").owlCarousel({

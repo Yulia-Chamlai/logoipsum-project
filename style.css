@@ -354,6 +354,10 @@ body {
   color: #4f596a;
 }
 
+body ._overflow {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
